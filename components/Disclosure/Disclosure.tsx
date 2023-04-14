@@ -4,22 +4,25 @@ import {
 } from "@headlessui/react";
 import React from "react";
 import { DisclosureButton } from "./DisclosureButton";
+import { twMerge } from "tailwind-merge";
 
 type DisclosureProps = {
   children?: React.ReactNode;
   defaultOpen?: boolean;
   title?: string;
+  className?: string;
 };
 
 export const Disclosure = ({
   children,
   defaultOpen,
   title,
+  className,
 }: DisclosureProps) => {
   return (
     <HeadlessDisclosure defaultOpen={defaultOpen}>
       {({ open }) => (
-        <>
+        <div className={twMerge("Disclosure", className)}>
           <DisclosureButton open={open}>{title}</DisclosureButton>
           {/* TODO figure out why enter transition is not working while the leave transition is! */}
           <Transition
@@ -33,7 +36,7 @@ export const Disclosure = ({
           >
             {children}
           </Transition>
-        </>
+        </div>
       )}
     </HeadlessDisclosure>
   );

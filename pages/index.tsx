@@ -12,7 +12,7 @@ export default function Home() {
         <Canvas>
           <Screen>
             <h1>Code AI</h1>
-            <Link className="hover:text-blue-500" href="/Tour">
+            <Link className="hover:text-blue-500" href="/dev">
               Take the tour
             </Link>
           </Screen>

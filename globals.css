@@ -8,23 +8,25 @@
   }
 }
 
-/* @layer utilities {
-  .cursor-transparent {
-    @apply cursor-none;
-    cursor: url(https://img.freepik.com/premium-vector/vector-transparent-checkerboard-transparent-pattern-background_546559-436.jpg),
-      default;
-  }
-} */
-
+.externalLink {
+  @apply flex items-center gap-2;
+}
+.externalLink::after {
+  @apply inline-block w-6 h-6 bg-no-repeat aspect-square;
+  /* a.externalLink.\!text-blue-900.transform.transition-all.transform-.hover\:\!scale-150.mx-2::after { */
+  content: "";
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 24 24' stroke-width='1.5' stroke='white' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25' /%3E%3C/svg%3E%0A");
+}
 body {
-  @apply bg-black overflow-hidden;
+  @apply overflow-hidden bg-black;
 }
 
 #__next {
-  @apply bg-slate-900 p-4;
+  @apply p-4 bg-slate-900;
 }
 .__json-pretty__ {
-  @apply py-2 px-2;
+  @apply px-2 py-2;
 }
 
 * {

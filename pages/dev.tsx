@@ -10,6 +10,7 @@ import { AddToDatabase } from "@components/Tour/SubSections/AddToDatabase";
 import { CheerioCrawler } from "@components/Tour/SubSections/CheerioCrawler";
 import { GoogleScraper } from "@components/Tour/SubSections/GoogleScraper";
 import { ConvertToEmbeddings } from "@components/Tour/SubSections/ConvertToEmbeddings";
+import { DevGettingStarted } from "@components/Tour/SubSections/DevGettingStarted";
 
 type TourProps = {};
 
@@ -23,6 +24,9 @@ const Tour = ({}: TourProps): React.ReactElement => {
           should do!
         </p>
       </div>
+      <TourSection title="Getting Started (Developer guide)">
+        <DevGettingStarted />
+      </TourSection>
       <TourSection title="1. Scrape google results">
         <TourSubSection title="I. Scrape links on a webpage">
           <span className="inline-block whitespace-break-spaces">
@@ -58,8 +62,9 @@ const Tour = ({}: TourProps): React.ReactElement => {
           <Code>components/Tour/Sections/ConvertToEmbeddings.tsx</Code>
           <ConvertToEmbeddings />
         </TourSubSection>
+        <TourSection title="II. Divide the raw page content into chunks"></TourSection>
 
-        <TourSubSection title="II. Store the embeddings in the database"></TourSubSection>
+        <TourSubSection title="III. Store the embeddings in the database"></TourSubSection>
       </TourSection>
 
       <TourSection title="3. Handle User Input">
@@ -102,8 +107,8 @@ const Tour = ({}: TourProps): React.ReactElement => {
       <TourSection title="5. Start a chat with the AI">
         {/* TODO: replace the spans with a description component */}
         <span className="inline-block my-3 whitespace-break-spaces">
-          In progress, here will be a chat window with selectors.
-          open ai playground clone.
+          In progress, here will be a chat window with selectors. open ai
+          playground clone.
         </span>
       </TourSection>
     </Theme>

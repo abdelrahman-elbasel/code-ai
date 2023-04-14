@@ -28,7 +28,7 @@ body {
 }
 
 * {
-  @apply cursor-none scrollbar-thin scrollbar-thumb-slate-800 scrollbar-track-slate-900 scrollbar-thumb-rounded-3xl;
+  @apply !cursor-none scrollbar-thin scrollbar-thumb-slate-800 scrollbar-track-slate-900 scrollbar-thumb-rounded-3xl;
 }
 
 .min-h-screen-relaxed {

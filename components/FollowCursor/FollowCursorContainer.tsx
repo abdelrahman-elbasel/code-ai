@@ -2,15 +2,15 @@ import { useMousePosition } from "@hooks/useMousePosition";
 import React from "react";
 import { twMerge } from "tailwind-merge";
 
-type SimpleFollowProps = {
+type FollowCursorContainerProps = {
   children?: React.ReactNode;
   className?: string;
 };
 
-export const SimpleFollow = ({
+export const FollowCursorContainer = ({
   children,
   className,
-}: SimpleFollowProps): React.ReactElement => {
+}: FollowCursorContainerProps): React.ReactElement => {
   const { x, y } = useMousePosition();
 
   const divWidth = 30;
@@ -18,7 +18,7 @@ export const SimpleFollow = ({
   return (
     <span
       className={twMerge(
-        "simpleFollow fixed z-50 pointer-events-none inset-0 flex items-center justify-center p-4 aspect-square rounded-full transform",
+        "followCursorContainer hidden lg:flex fixed z-50 pointer-events-none inset-0 items-center justify-center p-4 aspect-square rounded-full transform",
         className
       )}
       style={{

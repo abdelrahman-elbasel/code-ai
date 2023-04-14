@@ -59,9 +59,7 @@ const Tour = ({}: TourProps): React.ReactElement => {
           <ConvertToEmbeddings />
         </TourSubSection>
 
-        <TourSubSection title="II. Store the embeddings in the database">
-          
-        </TourSubSection>
+        <TourSubSection title="II. Store the embeddings in the database"></TourSubSection>
       </TourSection>
 
       <TourSection title="3. Handle User Input">
@@ -100,6 +98,13 @@ const Tour = ({}: TourProps): React.ReactElement => {
             users&lsquo;query and send it to the open ai api for a response
           </span>
         </TourSubSection>
+      </TourSection>
+      <TourSection title="5. Start a chat with the AI">
+        {/* TODO: replace the spans with a description component */}
+        <span className="inline-block my-3 whitespace-break-spaces">
+          In progress, here will be a chat window with selectors.
+          open ai playground clone.
+        </span>
       </TourSection>
     </Theme>
   );

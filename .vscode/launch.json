@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "http://localhost:3000",
+            "url": "https://abdelrahman-elbasel-stunning-zebra-vxqg7g46x9pfwqw6-3000.preview.app.github.dev/",
             "webRoot": "${workspaceFolder}"
         }
     ]

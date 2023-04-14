@@ -70,10 +70,6 @@ export const DevGettingStarted =
         </div>
         <div>
           <span className={spanClassNames}>
-            The final step is to create a SQL function which will be used to
-            retrieve data from the database that matches the user's query, this
-            works by comparing the vectors stored in the database with the
-            vectors generated from the users query
           </span>
           <Code>{matchDocumentsSQLFunction}</Code>
         </div>
@@ -98,9 +94,6 @@ export const DevGettingStarted =
                 >
                   supabase projects dashboard
                 </a>
-                start a new project / create a new account if you haven't
-                already then go to your project <span className="hover:text-green-700">settings</span> {"-->"} Api, the
-                variables are there.
               </span>
             </Disclosure>
             <Disclosure className={disclosureClassName} title="OPENAI_API_KEY">
